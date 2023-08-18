@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0 40px;
+}
+
+/* For Header */
+
+.logo {
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.header_inner button {
+    background: transparent;
+    border: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+}
+
+.header_inner button {
+    display: none;
+}
+
+.header_inner button svg {
+    width: 30px;
+    height: 30px;
+}
+
+.header_inner button:hover {
+    background: #a80014;
+    color: white;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    gap: 30px;
+}
+
+.header_inner ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    background: #686868;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 20px;
+    display: block;
+    transition: all 0.4s;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header_inner ul li a:hover,
+.header_inner ul li a.active {
+    background: #0008a8;
+    color: #ffffff;
+}
+
+/* For Banner Section */
+
+.banner_inner {
+    overflow: hidden;
+}
+
+#banner .banner_inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    overflow: unset;
+    overflow-clip-margin: unset;
+}
+
+/* For Section */
+
+.inner_section .money_value_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.inner_section {
+    margin-top: 80px;
+}
+
+.inner_section .money_value_inner {
+    border-bottom: 1px solid rgb(17, 0, 255);
+    padding-bottom: 50px;
+}
+
+.money_detail p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.inner_section .money_value_inner .money_detail {
+    width: calc(100% - 400px);
+}
+
+.inner_section .money_value_inner figure {
+    width: 400px;
+}
+
+.inner_section .money_value_inner figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+h2.section_title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #a80014;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+.last-child .money_value_inner {
+    border-bottom: none;
+}
+
+/* === Footer === */
+
+footer {
+    background: #2400a8;
+    padding: 50px 0;
+    color: white;
+}
+
+.footer_inner h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer_icon p,
+.footer_inner p {
+    font-size: 22px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+/* For Portfolio */
+
+#card_section .card_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#card_section .card_section .card figure{
+    text-align: center;
+}
+
+#card_section .card_section .card figure img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#card_section .card_section .card {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+#card_section .card_section .card p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#card_section .section_title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: start;
+    color: #a80014;
+}
+
+#card_section {
+    margin-top: 80px;
+}
+
+
+
+@media (max-width:1280px) {
+    .logo {
+        width: 300px;
+    }
+
+    .header_inner ul li a {
+        padding: 4px 12px;
+    }
+
+    .header_inner {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header_inner ul {
+        width: 100%;
+    }
+
+    .header_inner ul li {
+        width: 48%;
+        text-align: center;
+    }
+
+    .header_inner ul li a {
+        padding: 10px 10px;
+    }
+
+    .inner_section .money_value_inner {
+        display: block;
+    }
+
+    .inner_section .money_value_inner figure {
+        width: 40%;
+        margin-bottom: 20px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .inner_section .money_value_inner .money_detail {
+        width: 100%;
+    }
+
+    .inner_section {
+        margin-top: 40px;
+    }
+
+    #card_section .section_title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    #card_section {
+        margin-top: 50px;
+    }
+
+    #card_section .card_section .card {
+        width: 48%;
+    }
+
+    .footer_icon .social_iocn .iocns svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer_icon .social_iocn {
+        gap: 10px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        max-width: 1500px;
+        padding: 0 20px;
+    }
+
+    .header_inner button {
+        display: flex;
+    }
+
+    ul.active {
+        display: block;
+    }
+
+    .header_inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header_inner ul {
+        min-width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .header_inner ul li {
+        margin-bottom: 10px;
+    }
+
+    .header_inner ul li a {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .header_inner button {
+        width: 10%;
+    }
+
+    #banner .banner_inner img {
+        height: 200px;
+    }
+
+    h2.section_title {
+        font-size: 30px;
+    }
+
+    .money_detail p {
+        margin-bottom: 20px;
+    }
+
+    .inner_section .money_value_inner figure {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #card_section .card_section .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #card_section .section_title {
+        font-size: 30px;
+    }
+
+    .header_inner ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer_inner h2 {
+        font-size: 30px;
+    }
+
+    .footer_icon p,
+    .footer_inner p {
+        font-size: 16px;
+    }
+
+    .footer_icon {
+        display: block;
+    }
+
+    .footer_icon .social_iocn {
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+}
